@@ -5,7 +5,7 @@ module.exports.run = async (bot, message, args) => {
         .setColor(message.guild.me.displayHexColor)
         .setTitle('Pong!')
         .addField('<:wifi:434729220669964319> Latency', (new Date().getTime() - message.createdTimestamp) + ' ms', true)
-        .addField('<:server:434729191192395778> Websocket' , `${Math.round(bot.ping)} ms`, false);
+        .addField('💞 Websocket' , `${Math.round(bot.ping)} ms`, false);
          message.channel.send(pEmbed);
 }
 
